@@ -265,6 +265,20 @@ docker run -d -v /data/mysql:/var/lib/mysql mysql
 </p>
 </details>
 
+##### Create a shared folder between 2 containers, you can use ubuntu or busybox image
 
+<details><summary>show</summary>
+<p>
 
+```bash
+Run this on one terminal
+docker run -it -v /tmp/data:/tmp/data busybox
+create some file inside /tmp/data
 
+Open up another terminal, and run this
+docker run -it -v /tmp/data:/tmp/data busybox
+check files inside /tmp/data
+```
+
+</p>
+</details>
