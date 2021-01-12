@@ -69,3 +69,35 @@ docker-compose -f <docker-compose-config-filename> up
 
 </p>
 </details>
+
+
+##### Here are some scenario based question. You don't have to implement now, but you should be aware of how these can be implemented. So imagine that you have a java application that needs Postgres database. 
+
+How would you run the application with postgres running in container
+
+<details><summary>show</summary>
+<p>
+
+```bash
+Run postgres in a container, and expose it's port so java applciation can connect to it
+```
+
+</p>
+</details>
+
+
+How would you run both the application and postgres running in different container
+
+<details><summary>show</summary>
+<p>
+
+```bash
+Run postgres in a container
+Run application in a container, and link them using --link. Application should use host as the service name of postgres.
+
+or 
+Use docker compose to run both the containers so they are linked. Application should still use host as the service name of postgres.
+```
+
+</p>
+</details>
