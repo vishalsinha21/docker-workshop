@@ -71,7 +71,7 @@ docker-compose -f <docker-compose-config-filename> up
 </details>
 
 
-##### Here are some scenario based question. You don't have to implement now, but you should be aware of how these can be implemented. So imagine that you have a java application that needs Postgres database. 
+##### Here are some scenario based question. You don't have to implement now, but you should be aware of how these can be implemented. So imagine that you have an application that needs Postgres database. 
 
 How would you run the application with postgres running in container
 
